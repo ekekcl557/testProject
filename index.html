@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- js lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/mixitup.min.js"></script>
+    <!-- js -->
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <!-- inner: 1200px 가운데 정렬 -->
+    <!-- 아이템 배치: (pc)3개, (tablet)2개, (mob)1개 -->
+    <!-- 주어진 조건, 이미지 이외 버튼, 색상 등은 개인커스텀 -->
+    <!-- cf:) mixitup 라이센스: Licensing MixItUp is open source and free to use for non-commercial, educational and non-profit use. , a commercial license is required.-->
+
+    <div class="container inner">
+        <button type="button" data-filter="all">All</button>
+        <button type="button" data-filter=".spring">spring</button>
+        <button type="button" data-filter=".summer">summer</button>
+        <button type="button" data-filter=".fall">fall</button>
+        <button type="button" data-filter=".winter">winter</button>
+        <button type="button" data-filter="none">None</button>
+    </div>
+
+    <div class="mix-wrapper inner">
+        <div class="mix fall" data-orde="1">
+            <img src="./images/fall.jpg" alt="fall">
+        </div>
+        <div class="mix spring" data-orde="2">
+            <img src="./images/spring.jpg" alt="spring">
+        </div>
+        <div class="mix summer" data-orde="3">
+            <img src="./images/summer.jpg" alt="summer">
+        </div>
+        <div class="mix winter" data-orde="4">
+            <img src="./images/winter.jpg" alt="winter">
+        </div>
+        <div class="mix winter" data-orde="5">
+            <img src="./images/winter.jpg" alt="winter">
+        </div>
+        <div class="mix spring" data-orde="6">
+            <img src="./images/spring.jpg" alt="spring">
+        </div>
+        <div class="mix summer" data-orde="7">
+            <img src="./images/summer.jpg" alt="summer">
+        </div>
+        <div class="mix fall" data-orde="8">
+            <img src="./images/fall.jpg" alt="fall">
+        </div>
+        <div class="mix winter" data-orde="9">
+            <img src="./images/winter.jpg" alt="winter">
+        </div>
+        <div class="mix summer" data-orde="10">
+            <img src="./images/summer.jpg" alt="summer">
+        </div>
+        <div class="mix fall" data-orde="11">
+            <img src="./images/fall.jpg" alt="fall">
+        </div>
+        <div class="mix spring" data-orde="12">
+            <img src="./images/spring.jpg" alt="spring">
+        </div>
+    </div>
+</body>
+</html>
